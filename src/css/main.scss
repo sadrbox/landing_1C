@@ -1,0 +1,44 @@
+@import "param";
+@import url("reset.css");
+
+html,
+body {
+  //display: grid;
+  height: 100%;
+  //padding: 4px;
+}
+body {
+  display: grid;
+  grid-template-rows: 1fr;
+  //box-sizing: border-box;
+}
+
+#screen {
+  display: grid;
+  //height: 99%;
+  //grid-template-rows: 1fr;
+  //align-content: space-between;
+  border: 1px solid #333;
+  margin: 4px;
+}
+
+#header,
+#main,
+#footer {
+  display: grid;
+}
+
+.container {
+  display: grid;
+  grid-auto-flow: column;
+}
+.row {
+  display: grid;
+  grid-auto-flow: column;
+  border: 1px solid $red;
+}
+.col {
+  display: grid;
+  grid-auto-flow: row;
+  border: 1px solid green;
+}

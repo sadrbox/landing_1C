@@ -1,0 +1,47 @@
+@import url("reset.css");
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+#screen {
+  display: -ms-grid;
+  display: grid;
+  border: 1px solid #333;
+  margin: 4px;
+}
+
+#header,
+#main,
+#footer {
+  display: -ms-grid;
+  display: grid;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  border: 1px solid red;
+}
+
+.col {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  border: 1px solid green;
+}
+/*# sourceMappingURL=main.css.map */
