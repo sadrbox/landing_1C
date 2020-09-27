@@ -3,6 +3,7 @@
 
 html,
 body {
+  font-family: "Roboto Slab", serif;
   //display: grid;
   height: 100%;
   //padding: 4px;
@@ -26,6 +27,7 @@ body {
 #main,
 #footer {
   display: grid;
+  grid-auto-flow: column;
 }
 
 .container {
@@ -35,10 +37,33 @@ body {
 .row {
   display: grid;
   grid-auto-flow: column;
-  border: 1px solid $red;
+  border: 0px solid $red;
 }
 .col {
   display: grid;
   grid-auto-flow: row;
   border: 1px solid green;
+}
+
+.offer {
+  padding: 60px 0 0 60px;
+  //line-height: 4rem;
+}
+.offer__pretitle {
+  line-height: 1rem;
+  //text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1rem;
+  margin-left: 50px;
+  color: green;
+}
+.offer__subtitle {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+.offer__title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 4rem;
 }
