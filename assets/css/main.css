@@ -8,6 +8,10 @@ body {
   font-size: 14pt;
 }
 
+body {
+  background-size: cover;
+}
+
 #screen {
   display: -ms-grid;
   display: grid;
@@ -49,7 +53,7 @@ body {
 }
 
 .offer {
-  padding: 0px 50px 50px 200px;
+  padding: 0px 220px 50px 200px;
   border-radius: 6px;
   background: #fddb3a;
   -ms-grid-rows: 60px;
