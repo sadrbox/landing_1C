@@ -5,21 +5,14 @@ html,
 body {
   font-family: "Roboto Slab", serif;
   height: 100%;
-}
-
-body {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fddb3a)) center center no-repeat;
-  background: linear-gradient(180deg, #fddb3a) center center no-repeat;
+  font-size: 14pt;
 }
 
 #screen {
   display: -ms-grid;
   display: grid;
-  border: 1px solid #333;
+  padding: 50px 50px 50px 50px;
+  border: 0px solid #333;
   margin: 4px;
 }
 
@@ -49,19 +42,16 @@ body {
   display: grid;
   grid-auto-flow: row;
   border: 0px solid green;
-  -ms-grid-columns: min-content;
-      grid-template-columns: -webkit-min-content;
-      grid-template-columns: min-content;
-  -ms-grid-rows: min-content;
-      grid-template-rows: -webkit-min-content;
-      grid-template-rows: min-content;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  justify-items: start;
 }
 
 .offer {
-  margin: 50px 0 50px 50px;
-  padding: 0px 0px 50px 50px;
+  padding: 0px 50px 50px 200px;
   border-radius: 6px;
-  background: #f6f4e6;
+  background: #fddb3a;
   -ms-grid-rows: 60px;
       grid-template-rows: 60px;
   display: -ms-grid;
@@ -78,18 +68,59 @@ body {
       justify-self: end;
   color: green;
   background: #28df99;
-  border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 .offer__title {
   font-size: 3rem;
   font-weight: 800;
-  width: 700px;
 }
 
 .offer__subtitle {
   font-size: 1.6rem;
   line-height: 2rem;
+}
+
+.advantages {
+  margin: 50px 0 50px 50px;
+  padding: 0px 0px 0px 0px;
+  border-radius: 6px;
+  display: -ms-grid;
+  display: grid;
+  font-weight: normal;
+}
+
+.advantages li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px minmax(250px, 600px);
+      grid-template-columns: 150px minmax(250px, 600px);
+  margin-bottom: 50px;
+}
+
+.advantages img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.advantages h4 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  font-size: 160%;
+  line-height: 3rem;
+}
+
+.advantages p {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  font-size: 80%;
+  line-height: 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */
