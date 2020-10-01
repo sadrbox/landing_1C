@@ -23,11 +23,11 @@ body {
   display: grid;
   //width: 50%;
   //height: 99%;
-  padding: 50px 50px 50px 50px;
+  // padding: 50px 50px 50px 50px;
   //grid-template-rows: 1fr;
   //align-content: space-between;
-  border: 0px solid #333;
-  margin: 4px;
+  // border: 0px solid #333;
+  // margin: 4px;
 }
 
 #header,
@@ -35,6 +35,10 @@ body {
 #footer {
   display: grid;
   grid-auto-flow: column;
+}
+
+#header {
+  background: #fddb3a;
 }
 
 .container {
@@ -62,7 +66,7 @@ body {
   padding: 0px 220px 50px 200px;
   border-radius: 6px;
   //background: #f6f4e6;
-  background: #fddb3a;
+  // background: #fddb3a;
   // box-shadow: 0px 2px 2px 0px rgb(151, 151, 151);
   // grid-auto-flow: column;
   // grid-template-columns: 160px ;

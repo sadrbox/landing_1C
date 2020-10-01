@@ -15,9 +15,6 @@ body {
 #screen {
   display: -ms-grid;
   display: grid;
-  padding: 50px 50px 50px 50px;
-  border: 0px solid #333;
-  margin: 4px;
 }
 
 #header,
@@ -26,6 +23,10 @@ body {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
+}
+
+#header {
+  background: #fddb3a;
 }
 
 .container {
@@ -55,7 +56,6 @@ body {
 .offer {
   padding: 0px 220px 50px 200px;
   border-radius: 6px;
-  background: #fddb3a;
   -ms-grid-rows: 60px;
       grid-template-rows: 60px;
   display: -ms-grid;
